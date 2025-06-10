@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body, #root{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  font-family: 'Manrope', sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  background-color: #050a23;
+  background-image:
+    radial-gradient(circle at 25% 25%, #0f2152 15%, transparent 16%),
+    radial-gradient(circle at 75% 75%, #1e3a8a 15%, transparent 16%);
+  background-size: 10px 10px;
+  background-repeat: repeat;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.bg-weave {
+  background-color: #050a23;
+  background-image:
+    radial-gradient(circle at 25% 25%, #0f2152 15%, transparent 16%),
+    radial-gradient(circle at 75% 75%, #1e3a8a 15%, transparent 16%);
+  background-size: 10px 10px;
+  background-repeat: repeat;
+  position: relative;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+    background-color: transparent;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0s ease-in-out forwards;
+}
+
+.navbar-text-element {
+  font-size: 16px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+  /* transition: font-size 0.2s ease; */
+}
+
+.navbar-text-element:hover {
+  transform: scale(1.25);
+  /* font-size: 20px; */
+}
