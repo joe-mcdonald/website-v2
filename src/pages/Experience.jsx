@@ -33,18 +33,18 @@ export default function Experience() {
   ];
 
   return (
-    <section className="w-full bg-[#071736] py-24 px-6 text-white flex flex-col items-center">
-      <h2 className="text-3xl font-bold font-sans mb-12">My Experience</h2>
-      <div className="relative border-l-2 border-blue-400 pl-6">
+    <section className="w-full bg-[#e2e8f0] dark:bg-[#050a23] py-8 px-6 text-[#0f172a] dark:text-white flex flex-col items-center max-w-6xl shadow-lg">
+      <h2 className="text-3xl font-bold font-sans text-[#0f172a] dark:text-white mb-12">My Experience</h2>
+      <div className="relative border-l-2 border-gray-400 dark:border-blue-400 pl-6">
         {jobs.map((job, index) => (
           <div key={index} className="mb-12 pl-8 relative">
-            <div className="absolute left-0 top-1.5 w-3 h-3 bg-blue-400 rounded-full" />
+            <div className="absolute left-0 top-1.5 w-3 h-3 bg-gray-400 dark:bg-blue-400 rounded-full" />
 
-            <h3 className="text-xl font-bold font-sans text-white">{job.title}</h3>
-            <p className="text-gray-300 font-sans text-sm mb-1">
-            <span className="font-medium font-sans">{job.company}</span> • {job.date}
+            <h3 className="text-xl font-bold font-sans text-[#0f172a] dark:text-white">{job.title}</h3>
+            <p className="font-sans text-[#0f172a] dark:text-white text-sm mb-1">
+            <span className="font-medium font-sans text-[#0f172a] dark:text-white">{job.company}</span> • {job.date}
             </p>
-            <p className="text-gray-400 font-sans">{job.description}</p>
+            <p className="font-sans text-[#0f172a] dark:text-white">{job.description}</p>
         </div>
         ))}
       </div>

@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full bg-white dark:bg-[#0a1e40] text-black dark:text-white">
       <Navbar onAboutClick={handleAboutClick} onContactClick={handleContactClick} onHomeClick={handleHomeClick}/>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
@@ -77,6 +77,7 @@ function App() {
               </PageWrapper>
             }
           />
+          
         </Routes>
       </AnimatePresence>
     </div>

@@ -3,36 +3,34 @@
 @tailwind utilities;
 
 
-html, body, #root{
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: 100%;
-  font-family: 'Manrope', sans-serif;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  background-color: #050a23;
-  background-image:
-    radial-gradient(circle at 25% 25%, #0f2152 15%, transparent 16%),
-    radial-gradient(circle at 75% 75%, #1e3a8a 15%, transparent 16%);
-  background-size: 10px 10px;
-  background-repeat: repeat;
-  position: relative;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+body {
+  @apply bg-white text-black dark:text-white dark:bg-[#0a1e40] transition-colors duration-300;
+  @apply transition-colors duration-300;
 }
 
 .bg-weave {
-  background-color: #050a23;
-  background-image:
-    radial-gradient(circle at 25% 25%, #0f2152 15%, transparent 16%),
-    radial-gradient(circle at 75% 75%, #1e3a8a 15%, transparent 16%);
+  @apply transition-colors duration-300;
+
   background-size: 10px 10px;
   background-repeat: repeat;
   position: relative;
 }
 
+/* light mode */
+html:not(.dark) .bg-weave {
+  background-color: #f4f6f8;
+  background-image:
+    radial-gradient(circle at 25% 25%, #cbd5e1 15%, transparent 16%),
+    radial-gradient(circle at 75% 75%, #cdd5e1 15%, transparent 16%);
+}
+
+/* dark mode */
+html.dark .bg-weave {
+  background-color: #050a23;
+  background-image:
+    radial-gradient(circle at 25% 25%, #0f2152 15%, transparent 16%),
+    radial-gradient(circle at 75% 75%, #1e3a8a 15%, transparent 16%);
+}
 
 @keyframes fade-in {
   from {
