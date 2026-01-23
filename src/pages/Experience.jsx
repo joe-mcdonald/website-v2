@@ -7,28 +7,28 @@ export default function Experience() {
       company: "CanAssist",
       date: "May 2024 – Aug 2024",
       description:
-        "Rebuilt their CanPlan app, an app that helps people with cognitive disabilities perform daily tasks. The app was rebuilt using Flutter with both iOS and Android support. Also managed all development deadlines as the sole developer of the app during that work term.",
+        "Led the redevelopment of CanPlan, a Flutter-based mobile accessibility app used by 4,000+ users on iOS and Android, with a large focus on accessibility-focused UI improvements. During this project I implemented features such as a scalable SQLite database, custom video recording, and task scheduling with push notifications. I also helped demonstrate other CanAssist technology during office visits and trade shows."
     },
     {
       title: "Software Developer Intern",
       company: "Lantronix Inc.",
       date: "May 2023 – Aug 2023",
       description:
-        "Performed automated and manual testing, scripting and debugging for a car infotainment system product.",
+        "Performed automated and manual testing, scripting and debugging for a car infotainment system product. Also collaborated with engineers to debug and resolve issues across software and systems layers.",
     },
     {
-      title: "Software Test Engineer",
+      title: "Software Engineer in Test",
       company: "Corvus Energy",
       date: "Sept 2022 – Dec 2022",
       description:
-        "Designed Python test scripts for their Blue Whale marine energy storage system. Also designed 3D printable parts for their hardware test benches.",
+        "Designed Python test scripts for their Blue Whale marine energy storage system. I also assisted with migration to Azure DevOps for continuous testing as well as designed 3D printable parts for their hardware test benches.",
     },
     {
       title: "Junior Software Developer",
       company: "STR SpeechTech",
       date: "Jan 2022 – Apr 2022",
       description:
-        "Helped with the .NET development and maintenance of their flagship StarCaster software. Also experimented with voice cloning software in a side project.",
+        "Helped with the .NET development and maintenance of their flagship StarCaster software. I also built and trained deep learning models using TensorFlow for speech synthesis.",
     },
   ];
 

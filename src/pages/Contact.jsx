@@ -25,7 +25,7 @@ export default function Contact() {
           <FaGithub size={40} />
         </a>
         <a
-          href="mailto:joemcd0224@gmail.com"
+          href="mailto:joe@joemcd.ca"
           className="transform transition-transform hover:scale-125 text-gray-700 dark:text-blue-400"
         >
           <FaEnvelopeOpen size={40} />
